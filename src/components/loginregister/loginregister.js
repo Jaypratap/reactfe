@@ -2,7 +2,6 @@ import React from "react";
 import './loginregister.css' 
 import { useState} from 'react';
 import {
-    BrowserRouter as Router,
     useNavigate,
   } from "react-router-dom";
 import api from "../api/api";

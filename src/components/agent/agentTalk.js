@@ -3,7 +3,6 @@ import { ImCog, ImTwitch, ImShrink, ImBaffled } from "react-icons/im";
 import { Link } from "react-router-dom";
 import './agentTals.css'
 import { AiOutlineLogout } from 'react-icons/ai';
-import { useNavigate } from "react-router-dom";
 
 const AgentPage =  () =>{
     
