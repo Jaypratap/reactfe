@@ -3,14 +3,13 @@ import { ImCog, ImTwitch, ImShrink, ImBaffled } from "react-icons/im";
 import { Link } from "react-router-dom";
 import './agentTals.css'
 import { AiOutlineLogout } from 'react-icons/ai';
-import api from "../api/api";
 import { useNavigate } from "react-router-dom";
 
 const AgentPage =  () =>{
     
     const username = sessionStorage.getItem("user")
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
     function logout(){
         // Make a GET request

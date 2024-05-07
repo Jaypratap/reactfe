@@ -1,4 +1,3 @@
-import { data } from 'jquery';
 import './style.css';
 import LoginRegister from './components/loginregister/loginregister';
 import HomePage from './components/home/homepage';
@@ -10,9 +9,7 @@ import SupportPage from './components/support/support';
 
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link,
   Routes
 } from "react-router-dom";
 

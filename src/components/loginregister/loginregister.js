@@ -1,16 +1,11 @@
 import React from "react";
 import './loginregister.css' 
-import HomePage from "../home/homepage";
-import { useState, useEffect} from 'react';
+import { useState} from 'react';
 import {
     BrowserRouter as Router,
-    Switch,
-    Route,
-    Link, useNavigate,
-    Routes
+    useNavigate,
   } from "react-router-dom";
 import api from "../api/api";
-import { error } from "jquery";
 
 const LoginRegister =  () =>{
 
@@ -50,7 +45,7 @@ const LoginRegister =  () =>{
             })
             .then(response => {
                 // Handle the response
-                if (response.status==200){       
+                if (response.status===200){       
                     navigate('/agent');}
                 else{
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const HomePage =  () =>{
     
-    const username = localStorage.getItem('username');
+    // const username = localStorage.getItem('username');
 
     return (
         <div>
