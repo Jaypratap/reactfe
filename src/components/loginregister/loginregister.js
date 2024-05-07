@@ -121,7 +121,7 @@ const LoginRegister =  () =>{
                     
 
                     {action==="Login"?<div></div>: <div className="accept-terms">
-                        <label className="input_title"><input type="checkbox" />By Creating an acccount, I agree to our terms of use and privacy policy</label>
+                        <label className="input_title"><input type="checkbox" checked />By Creating an acccount, I agree to our <a class="terms_link"> terms of use </a>  and <a class="terms_link">privacy policy</a> </label>
                     </div>}
                     
                     <div class="error_message">
@@ -147,7 +147,24 @@ const LoginRegister =  () =>{
         </div>
 
         <div id="right" className="wrapper2">
-        <img src="home_page_image.png"  alt=""></img>
+            <div class="wrapper2_top">
+                <img src="home_page_image.png"  alt=""></img>
+            </div>
+
+            <div class="wrapper2_buttom">
+                <div class="wrapper2_content">
+                    <h2>Welcome to Ella</h2>
+
+                    <ul class="menu-item">
+                        <li class="menu-item"> AI Agent to automate your frondesk</li>
+                        <li class="menu-item"> Available 24/7</li>
+                        <li class="menu-item"> Calendar Integration</li>
+                        <li class="menu-item"> Answer any type of inbound calls</li>
+                    </ul>
+                </div>
+
+            </div>
+        
 
         </div>
 
