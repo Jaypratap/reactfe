@@ -2,7 +2,7 @@ import React from "react";
 import { ImCog, ImTwitch, ImShrink, ImBaffled } from "react-icons/im";
 import { Link } from "react-router-dom";
 import "./support.css"
-import { AiOutlineLogout } from 'react-icons/ai';
+import { FaSignOutAlt } from "react-icons/fa";
 
 const SupportPage =  () =>{
     function logout(){
@@ -12,12 +12,12 @@ const SupportPage =  () =>{
         sessionStorage.setItem('access_token', '');
         window.location.href = '/';
     }
-    const username = localStorage.getItem('username');
+    const username = sessionStorage.getItem('user');
     return (
         <div>
             <div class="sidebar">
                 <div class="username">
-                    <h2>{username}</h2>
+                    <h4>Ella</h4>
                 </div>
                 <ul>
                     <li> 
@@ -29,12 +29,15 @@ const SupportPage =  () =>{
                     <li> 
                         <Link to="/setting"><ImCog /> Settings</Link>
                     </li>
-                    <li className="active"> 
+                    <li> 
                         <Link to="/support"><ImTwitch /> Support</Link>
                     </li>
                 </ul>
 
-                <div className="logout-nav"> <Link onClick={logout}><AiOutlineLogout /> Log Out</Link> </div>
+                <div class="logout-nav">
+                    <Link onClick={logout}><img src="user_profile.png"  alt="dsgadg"></img>{username} Log Out <FaSignOutAlt/> </Link>
+                </div>
+                
             </div>
 
         <div class="content">

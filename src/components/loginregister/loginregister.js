@@ -74,7 +74,7 @@ const LoginRegister =  () =>{
             })
             .then(response => {
                 console.log(response.data)
-                sessionStorage.setItem('user', response.data['username']);
+                sessionStorage.setItem('user', response.data['first_name']);
                 sessionStorage.setItem('refresh_token', response.data['tokens']['refresh']);
                 sessionStorage.setItem('access_token', response.data['tokens']['access']);          
                 navigate('/agent');

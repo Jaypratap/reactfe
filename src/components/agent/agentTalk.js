@@ -2,7 +2,7 @@ import React from "react";
 import { ImCog, ImTwitch, ImShrink, ImBaffled } from "react-icons/im";
 import { Link } from "react-router-dom";
 import './agentTals.css'
-import { AiOutlineLogout } from 'react-icons/ai';
+import { FaSignOutAlt } from "react-icons/fa";
 
 const AgentPage =  () =>{
     
@@ -22,7 +22,7 @@ const AgentPage =  () =>{
         <div>
             <div class="sidebar">
                 <div class="username">
-                    <h4> {username}</h4>
+                    <h4> Ella </h4>
                 </div>
                 <ul>
                     <li className="active"> 
@@ -39,17 +39,27 @@ const AgentPage =  () =>{
                     </li>
                 </ul>
 
-                <div className="logout-nav"> <Link onClick={logout}><AiOutlineLogout /> Log Out</Link> </div>
+                <div class="logout-nav">
+                    <Link onClick={logout}><img src="user_profile.png"  alt="dsgadg"></img>{username} Log Out <FaSignOutAlt/> </Link>
+                </div>
+
             </div>
 
         <div class="content">
             <h2>Voice Agent</h2>
             <div class="container">
+                
+
+
                 <ul>
-                    <li> <h4> Dental Front Desk Agent </h4> </li>
+                    <li> <img src="logo.png"  alt=""></img></li>
+                    <li> <h3> Dental Front Desk Agent </h3>  </li>
                     <li> <p> Agent Description </p>  </li>
-                    <li> <button> Talk to Agent</button> </li>
+                    <li> <button class="agent_b"> Talk to Agent</button> </li>
                 </ul>
+                {/* <h3> Dental Front Desk Agent </h3>
+                <p> Agent Description </p>
+                <button> Talk to Agent</button> */}
             </div>
         </div>
         </div>
