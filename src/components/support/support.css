@@ -1,0 +1,10 @@
+.sidebar li.active {
+    background-color: lightskyblue;
+    color: white;
+  }
+
+
+  .logout-nav{
+    position: fixed;
+    bottom: 3%;
+}
