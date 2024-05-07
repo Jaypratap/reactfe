@@ -121,7 +121,7 @@ const LoginRegister =  () =>{
                     
 
                     {action==="Login"?<div></div>: <div className="accept-terms">
-                        <label className="input_title"><input type="checkbox" checked />By Creating an acccount, I agree to our <a class="terms_link" href=""> terms of use </a>  and <a class="terms_link" href="">privacy policy</a> </label>
+                        <label className="input_title"><input type="checkbox" checked />By Creating an acccount, I agree to our <label class="terms_link" > terms of use </label>  and <label class="terms_link" >privacy policy</label> </label>
                     </div>}
                     
                     <div class="error_message">

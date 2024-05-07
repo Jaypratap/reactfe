@@ -172,6 +172,7 @@ a {
 
 .terms_link{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 
