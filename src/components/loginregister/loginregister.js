@@ -141,8 +141,8 @@ const LoginRegister =  () =>{
             </div>
 
             {action==="Login"?<div className="accept-terms">
-                <label>Don't have an account? <a onClick={()=> setAction("Sign Up")}>Sign Up</a></label></div>:<div className="accept-terms">
-                <label>Already have an account? <a onClick={()=> setAction("Login")}>Log In</a></label>
+                <label>Don't have an account? <button onClick={()=> setAction("Sign Up")}>Sign Up</button></label></div>:<div className="accept-terms">
+                <label>Already have an account? <button onClick={()=> setAction("Login")}>Log In</button></label>
             </div>}
         </div>
 
