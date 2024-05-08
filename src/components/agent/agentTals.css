@@ -1,6 +1,6 @@
 .sidebar li.active {
-    background-color: lightskyblue;
-    color: white;
+    background-color: #DAE6FF;
+    color: #4484FF;
     font-family: 'Inter';
     font-size: 19px;
   }
@@ -64,8 +64,11 @@ h4{
     margin-left: 5%;
  }
 
-h2 {
+.content h2 {
     font-family: 'Roboto';
+    margin-top: 3%;
+    font-size: 30px;
+    margin-left: 3%;
 }
 
 .container {
@@ -105,4 +108,8 @@ img {
     border-radius: 40px;
     display: inline-block;
     object-fit: cover;
+}
+
+.agent_description{
+    color: #7D7D7D;
 }

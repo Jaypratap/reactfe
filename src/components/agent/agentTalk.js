@@ -46,7 +46,7 @@ const AgentPage =  () =>{
             </div>
 
         <div class="content">
-            <h2>Voice Agent</h2>
+            <h2>Voice Agents</h2>
             <div class="container">
                 
 
@@ -54,7 +54,7 @@ const AgentPage =  () =>{
                 <ul>
                     <li> <img src="logo.png"  alt=""></img></li>
                     <li> <h3> Dental Front Desk Agent </h3>  </li>
-                    <li> <p> Agent Description </p>  </li>
+                    <li> <p class="agent_description"> Agent Description </p>  </li>
                     <li> <button class="agent_b"> Talk to Agent</button> </li>
                 </ul>
                 {/* <h3> Dental Front Desk Agent </h3>
