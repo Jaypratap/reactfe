@@ -1,6 +1,6 @@
 import React from "react";
 import { ImCog, ImTwitch, ImShrink, ImBaffled } from "react-icons/im";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './agentTals.css'
 import { FaSignOutAlt } from "react-icons/fa";
 
@@ -8,7 +8,7 @@ const AgentPage =  () =>{
     
     const username = sessionStorage.getItem("user")
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     function logout(){
         // Make a GET request
@@ -16,6 +16,11 @@ const AgentPage =  () =>{
         sessionStorage.setItem('user', '');
         sessionStorage.setItem('refresh_token', '');
         sessionStorage.setItem('access_token', '');   
+    }
+
+
+    const startConv = () =>{
+        navigate("/agent/conversation");
     }
 
     return (
@@ -48,14 +53,11 @@ const AgentPage =  () =>{
         <div class="content">
             <h2>Voice Agents</h2>
             <div class="container">
-                
-
-
                 <ul>
                     <li> <img src="logo.png"  alt=""></img></li>
                     <li> <h3> Dental Front Desk Agent </h3>  </li>
                     <li> <p class="agent_description"> Agent Description </p>  </li>
-                    <li> <button class="agent_b"> Talk to Agent</button> </li>
+                    <li> <button class="agent_b" onClick={startConv}> Talk to Agent</button> </li>
                 </ul>
                 {/* <h3> Dental Front Desk Agent </h3>
                 <p> Agent Description </p>

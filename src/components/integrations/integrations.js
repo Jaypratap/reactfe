@@ -44,6 +44,7 @@ const IntegrationsPage =  () =>{
         <div class="content">
             <h2>Integrations</h2>
             <div class="content_data">
+            <img src="home_page_image.png"  alt=""></img>
                 <h3> This Page is in under maintenance</h3>
             </div>
         </div>

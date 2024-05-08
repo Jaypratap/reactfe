@@ -5,7 +5,7 @@ import IntegrationsPage from './components/integrations/integrations';
 import AgentPage from './components/agent/agentTalk';
 import SettingPage from './components/settings/settings';
 import SupportPage from './components/support/support';
-
+import AgentConv from './components/agent/agentConv';
 
 import {
   BrowserRouter as Router,
@@ -28,6 +28,7 @@ const App = () => {
             <Route path='/integrations' element={<IntegrationsPage />} />
             <Route path='/setting' element={<SettingPage />} />
             <Route path='/support' element={<SupportPage />} />
+            <Route path='/agent/conversation' element={<AgentConv />} />
         </Routes>
       </Router>
     </div>
